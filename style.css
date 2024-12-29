@@ -205,6 +205,8 @@ section .title::after{
 .home .home-content a:hover{
     color: linear-gradient(135deg, #2C3E50, #8A2BE2);
     background: none;
+    background-color: #213555;
+    
 }
 /* about section styling */
 .about .title::after{
@@ -248,6 +250,8 @@ section .title::after{
 .about .about-content .right a:hover{
     color: linear-gradient(135deg, #2C3E50, #8A2BE2);
     background: none;
+    background-color: #213555;
+
 }
 /* services section styling */
 .services, .teams{
@@ -324,6 +328,7 @@ section .title::after{
 .skills .skills-content .left a:hover{
     color: linear-gradient(135deg, #2C3E50, #8A2BE2);
     background: none;
+    background-color: #213555;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -523,6 +528,7 @@ section .title::after{
 .right form .button-area button:hover{
   color: linear-gradient(135deg, #2C3E50, #8A2BE2);
   background: none;
+  background-color: #213555;
 }
 /* footer section styling */
 footer{
