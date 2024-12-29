@@ -538,6 +538,7 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -660,4 +661,5 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    
 }

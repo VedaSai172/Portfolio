@@ -64,4 +64,50 @@ $(document).ready(function(){
             }
         }
     });
+    const skills = {
+        softwareDev: [
+            { name: "Python", proficiency: "90%" },
+            { name: "SQL", proficiency: "85%" },
+            { name: "ReactJS", proficiency: "80%" },
+            { name: "Django", proficiency: "75%" }
+        ],
+        dataRoles: [
+            { name: "Machine Learning", proficiency: "90%" },
+            { name: "Python", proficiency: "85%" },
+            { name: "Pandas", proficiency: "80%" },
+            { name: "Tableau", proficiency: "75%" }
+        ]
+    };
+    // skill bar script
+    skill = document.getElementsByClassName("button-container")
+    skill.onClick(function(){
+        const skillsList = document.getElementById("skillsList");
+        skillsList.innerHTML = ""; // Clear previous skills
+
+        skills[role].forEach(skill => {
+            const barDiv = document.createElement("div");
+            barDiv.classList.add("bars");
+
+            const infoDiv = document.createElement("div");
+            infoDiv.classList.add("info");
+
+            const skillName = document.createElement("span");
+            skillName.textContent = skill.name;
+
+            const skillProficiency = document.createElement("span");
+            skillProficiency.textContent = skill.proficiency;
+
+            infoDiv.appendChild(skillName);
+            infoDiv.appendChild(skillProficiency);
+
+            const lineDiv = document.createElement("div");
+            lineDiv.classList.add("line");
+            lineDiv.style.width = skill.proficiency;
+
+            barDiv.appendChild(infoDiv);
+            barDiv.appendChild(lineDiv);
+
+            skillsList.appendChild(barDiv);
+        });
+    })
 });
